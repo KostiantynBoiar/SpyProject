@@ -5,6 +5,8 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class PrntScreen {
@@ -13,7 +15,7 @@ public class PrntScreen {
     * Method should do screenshot of desktop
     */
 
-    public void photo() throws IOException, AWTException {
+    public String photo() throws IOException, AWTException {
         String path = new File("").getAbsolutePath();
         String format = ".png";
 
@@ -22,10 +24,11 @@ public class PrntScreen {
         int number = ran.nextInt(100000000);
         String nameOfScreenshot = Integer.toString(number);
 
-        String fullName = path + nameOfScreenshot + format;
-        System.out.println(fullName);
+         String fullName = path + nameOfScreenshot + format;
+        //System.out.println(fullName);
 
         BufferedImage image = new Robot().createScreenCapture(new Rectangle(Toolkit.getDefaultToolkit().getScreenSize()));
         ImageIO.write(image, "png", new File(fullName));
+        return fullName;
     }
 }

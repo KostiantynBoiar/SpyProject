@@ -39,7 +39,7 @@ import java.util.Set;
 import static com.google.api.services.gmail.GmailScopes.GMAIL_SEND;
 import static javax.mail.Message.RecipientType.TO;
 
-public class GMailer {
+public class GMailer implements Runnable{
 
     private static final String TEST_EMAIL = "kostya20041234@gmail.com";
     private final Gmail service;
@@ -125,4 +125,8 @@ public class GMailer {
         new GMailer().sendMail("A new message", "", file);
     }
 
+    @Override
+    public void run() {
+
+    }
 }

@@ -39,7 +39,7 @@ import java.util.Set;
 import static com.google.api.services.gmail.GmailScopes.GMAIL_SEND;
 import static javax.mail.Message.RecipientType.TO;
 
-public class GMailer implements Runnable{
+public class GMailer {
 
     private static final String TEST_EMAIL = "kostya20041234@gmail.com";
     private final Gmail service;
@@ -54,7 +54,10 @@ public class GMailer implements Runnable{
 
     private static Credential getCredentials(final NetHttpTransport httpTransport, GsonFactory jsonFactory)
             throws IOException {
-        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(jsonFactory, new InputStreamReader(GMailer.class.getResourceAsStream("/CREDENTIAL.json")));
+        GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(jsonFactory, new InputStreamReader(
+                        GMailer.class.getResourceAsStream("/CREDENTIAL.json")
+                )
+        );
 
         GoogleAuthorizationCodeFlow flow = new GoogleAuthorizationCodeFlow.Builder(
                 httpTransport, jsonFactory, clientSecrets, Set.of(GMAIL_SEND))
@@ -117,16 +120,6 @@ public class GMailer implements Runnable{
                 throw e;
             }
         }
-
-    }
-
-    public static void main(String[] args) throws Exception {
-        File file = new File("C:\\Users\\Mouze\\IdeaProjects\\SpyProgram11693845.png");
-        new GMailer().sendMail("A new message", "", file);
-    }
-
-    @Override
-    public void run() {
 
     }
 }

@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="SpyProgram:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ba78eb-3b72-4aee-97f4-9beff888663e" name="Changes" comment="GMailer class that should be sending messages with photo on your email is ready">
+    <list default="true" id="b6ba78eb-3b72-4aee-97f4-9beff888663e" name="Changes" comment="Main class is done">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpyProgram_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Threads/PrntScreenThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpyCode/ScreenshotRec/PrntScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpyCode/ScreenshotRec/PrntScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SpyCode/SendMail/GMailer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SpyCode/SendMail/GMailer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -59,9 +67,9 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.last.edited": "Artifacts",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "spring.configuration.checksum": "5f3d2c8222fe5b06312cf277198293d2"
   }
 }]]></component>
@@ -98,11 +106,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SpyProgram-1.0-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/target/SpyProgram-1.0-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="SpyProgram.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/SpyProgram_jar/SpyProgram.jar" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.SendMail" />
       <item itemvalue="Application.Unnamed (1)" />
       <item itemvalue="Application.Unnamed" />
+      <item itemvalue="JAR Application.SpyProgram-1.0-SNAPSHOT.jar" />
+      <item itemvalue="JAR Application.SpyProgram.jar" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.SpyProgram.jar" />
+        <item itemvalue="JAR Application.SpyProgram-1.0-SNAPSHOT.jar" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -113,7 +137,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669578052523</updated>
       <workItem from="1669578055084" duration="12012000" />
-      <workItem from="1669632641441" duration="17571000" />
+      <workItem from="1669632641441" duration="24994000" />
     </task>
     <task id="LOCAL-00001" summary="GMailer class that should be sending messages with photo on your email is ready">
       <created>1669661318978</created>
@@ -122,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669661318978</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Main class is done">
+      <created>1669664095732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669664095732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +172,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="GMailer class that should be sending messages with photo on your email is ready" />
-    <option name="LAST_COMMIT_MESSAGE" value="GMailer class that should be sending messages with photo on your email is ready" />
+    <MESSAGE value="Main class is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main class is done" />
   </component>
 </project>

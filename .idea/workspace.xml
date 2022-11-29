@@ -9,16 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6ba78eb-3b72-4aee-97f4-9beff888663e" name="Changes" comment="Update program">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/SpyProgram_jar2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="b6ba78eb-3b72-4aee-97f4-9beff888663e" name="Changes" comment="Edited pom.xml for correctly assembling project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/KostiantynBoiar/SpyProgram/MainClassSpy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpyCode/ScreenshotRec/PrntScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/KostiantynBoiar/SpyProgram/SpyCode/ScreenshotRec/PrntScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/SpyCode/SendMail/GMailer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/KostiantynBoiar/SpyProgram/SpyCode/SendMail/GMailer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Threads/PrntScreenThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/KostiantynBoiar/SpyProgram/Threads/PrntScreenThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,30 +45,34 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2I8zYYmotAGwMBYDiby7LDsOg7n" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Mouze/IdeaProjects/SpyProgram/src/main/java/SpyCode/SendMail",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Artifacts",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "spring.configuration.checksum": "5f3d2c8222fe5b06312cf277198293d2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mouze/IdeaProjects/SpyProgram/src/main/java/SpyCode/SendMail&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;5f3d2c8222fe5b06312cf277198293d2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mouze\IdeaProjects\SpyProgram\src\main\java\SpyCode\SendMail" />
@@ -91,6 +88,11 @@
     <option name="myCommands">
       <command value="mvn clean package" />
       <command value="mvn package" />
+      <command value="mvn clean package assembly:single resources:copy-resources" />
+      <command value="mvn clean package assembly:single" />
+      <command value="mvn resources:resources" />
+      <command value="mvn process-resources clean" />
+      <command value="mvn clean package assembly:single process-resources" />
     </option>
   </component>
   <component name="RunManager" selected="JAR Application.SpyProgram-1.0-SNAPSHOT-jar-with-dependencies.jar">
@@ -158,7 +160,8 @@
       <option name="presentableId" value="Default" />
       <updated>1669578052523</updated>
       <workItem from="1669578055084" duration="12012000" />
-      <workItem from="1669632641441" duration="27907000" />
+      <workItem from="1669632641441" duration="32344000" />
+      <workItem from="1669722506822" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="GMailer class that should be sending messages with photo on your email is ready">
       <created>1669661318978</created>
@@ -181,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669714105127</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Edited pom.xml for correctly assembling project">
+      <created>1669717022222</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669717022222</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +212,7 @@
     <MESSAGE value="GMailer class that should be sending messages with photo on your email is ready" />
     <MESSAGE value="Main class is done" />
     <MESSAGE value="Update program" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update program" />
+    <MESSAGE value="Edited pom.xml for correctly assembling project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited pom.xml for correctly assembling project" />
   </component>
 </project>

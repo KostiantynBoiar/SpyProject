@@ -1,6 +1,6 @@
-package Threads;
+package com.KostiantynBoiar.SpyProgram.Threads;
 
-import SpyCode.ScreenshotRec.PrntScreen;
+import com.KostiantynBoiar.SpyProgram.SpyCode.ScreenshotRec.PrntScreen;
 
 import java.awt.*;
 import java.io.IOException;

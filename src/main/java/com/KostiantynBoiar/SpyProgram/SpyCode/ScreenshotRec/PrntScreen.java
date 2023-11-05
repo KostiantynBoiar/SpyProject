@@ -11,7 +11,7 @@ import java.util.Random;
 public class PrntScreen {
     /*
     *
-    * Method should do screenshot of desktop
+    * Method should made screenshot of desktop
     */
 
     public String photo() throws IOException, AWTException {
